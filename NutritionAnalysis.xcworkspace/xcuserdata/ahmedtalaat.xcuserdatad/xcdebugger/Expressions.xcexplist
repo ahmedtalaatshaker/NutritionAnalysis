@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in UserServices.serverRequests(url:method:parameters:success:failure:):ServerRequest.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(response.metrics?.transactionMetrics[0].response as! NSHTTPURLResponse)">
+            </PersistentString>
+            <PersistentString
+               value = "userDefault.shared.Etag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UserServices.serverRequests(url:method:parameters:success:failure:):ServerRequest.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "userDefault.shared.Etag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "totalNutritionViewController.setData(totalDailyModel:):totalNutritionViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Array(arrayLiteral: totalNutrition.totalDaily)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "totalNutritionViewController.viewDidLoad():totalNutritionViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "total_Nutrition.element(at: 0)">
+            </PersistentString>
+            <PersistentString
+               value = "totalNutrition">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "totalNutritionViewController.setData():totalNutritionViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "totalNutrition">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "totalNutritionModel.init(fromDictionary:):totalNutritionModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "totalDaily">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in IngredientController.submit(_:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "totalNutritionObject.element(at: 1)">
+            </PersistentString>
+            <PersistentString
+               value = "totalNutritionObject">
+            </PersistentString>
+            <PersistentString
+               value = "self.totalNutrition">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

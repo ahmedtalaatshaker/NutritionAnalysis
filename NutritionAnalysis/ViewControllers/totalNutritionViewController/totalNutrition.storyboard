@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VaF-Qk-SFB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Total Daily Nutrition-->
+        <scene sceneID="Pfx-hu-0OU">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9G-qN-6pJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController title="Total Daily Nutrition" id="VaF-Qk-SFB" customClass="totalNutritionViewController" customModule="NutritionAnalysis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6WK-fu-JoR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OFR-b0-41w">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="got-Q0-m3F">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="got-Q0-m3F" firstAttribute="centerX" secondItem="OFR-b0-41w" secondAttribute="centerX" id="E9C-PE-8MQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="got-Q0-m3F" secondAttribute="trailing" id="HSs-QQ-Wjf"/>
+                                    <constraint firstAttribute="bottom" secondItem="got-Q0-m3F" secondAttribute="bottom" constant="20" id="Mzu-tp-zS5"/>
+                                    <constraint firstItem="got-Q0-m3F" firstAttribute="top" secondItem="OFR-b0-41w" secondAttribute="top" constant="25" id="QzQ-AN-dp0"/>
+                                    <constraint firstItem="got-Q0-m3F" firstAttribute="leading" secondItem="OFR-b0-41w" secondAttribute="leading" id="YYa-Je-uWD"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="ShL-zq-4Dc"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="CoN-4l-ubc"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fct-I6-vpD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fct-I6-vpD" firstAttribute="trailing" secondItem="OFR-b0-41w" secondAttribute="trailing" id="4Kt-K7-DUI"/>
+                            <constraint firstItem="OFR-b0-41w" firstAttribute="centerY" secondItem="Fct-I6-vpD" secondAttribute="centerY" id="7Wi-3s-d2m"/>
+                            <constraint firstItem="OFR-b0-41w" firstAttribute="leading" secondItem="Fct-I6-vpD" secondAttribute="leading" id="Dtq-Za-WLE"/>
+                            <constraint firstItem="OFR-b0-41w" firstAttribute="centerX" secondItem="Fct-I6-vpD" secondAttribute="centerX" id="KdK-C2-1aD"/>
+                            <constraint firstItem="OFR-b0-41w" firstAttribute="top" secondItem="Fct-I6-vpD" secondAttribute="top" id="PSH-bY-G5u"/>
+                            <constraint firstItem="Fct-I6-vpD" firstAttribute="bottom" secondItem="OFR-b0-41w" secondAttribute="bottom" id="Teb-IG-38d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stack" destination="got-Q0-m3F" id="7Ug-Wk-Ug5"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="147.82608695652175" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

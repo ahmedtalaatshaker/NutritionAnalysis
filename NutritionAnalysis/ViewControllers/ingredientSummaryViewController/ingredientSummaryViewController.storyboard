@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EvU-jy-Icc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ingredient Summary-->
+        <scene sceneID="LP9-l6-Gbj">
+            <objects>
+                <viewController title="Ingredient Summary" id="EvU-jy-Icc" customClass="ingredientSummaryViewController" customModule="NutritionAnalysis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hrr-pB-F5L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Ca-k0-bqy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Va1-v9-rZQ">
+                                        <rect key="frame" x="20" y="65.5" width="374" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="BcV-Ga-rHX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Total">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="totalNutrition:" destination="EvU-jy-Icc" eventType="touchUpInside" id="Fho-70-d4W"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1lY-JH-kU9">
+                                        <rect key="frame" x="10" y="25" width="394" height="20.5"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1lY-JH-kU9" firstAttribute="leading" secondItem="0Ca-k0-bqy" secondAttribute="leading" constant="10" id="A2q-OL-rho"/>
+                                    <constraint firstAttribute="trailing" secondItem="1lY-JH-kU9" secondAttribute="trailing" constant="10" id="COS-QQ-uGA"/>
+                                    <constraint firstItem="Va1-v9-rZQ" firstAttribute="top" secondItem="1lY-JH-kU9" secondAttribute="bottom" constant="20" id="EXy-WP-jXX"/>
+                                    <constraint firstAttribute="bottom" secondItem="Va1-v9-rZQ" secondAttribute="bottom" constant="20" id="O5u-gW-Z3V"/>
+                                    <constraint firstItem="1lY-JH-kU9" firstAttribute="centerX" secondItem="0Ca-k0-bqy" secondAttribute="centerX" id="VwL-TI-7Cn"/>
+                                    <constraint firstItem="1lY-JH-kU9" firstAttribute="top" secondItem="0Ca-k0-bqy" secondAttribute="top" constant="25" id="cbM-hy-VXF"/>
+                                    <constraint firstItem="Va1-v9-rZQ" firstAttribute="leading" secondItem="0Ca-k0-bqy" secondAttribute="leading" constant="20" id="uAl-9l-aLo"/>
+                                    <constraint firstAttribute="trailing" secondItem="Va1-v9-rZQ" secondAttribute="trailing" constant="20" id="yJX-O5-U4b"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="dmE-0H-JKv"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="bki-2U-Sza"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="66I-Ro-bxs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0Ca-k0-bqy" firstAttribute="leading" secondItem="hrr-pB-F5L" secondAttribute="leading" id="0VD-vy-351"/>
+                            <constraint firstItem="0Ca-k0-bqy" firstAttribute="top" secondItem="hrr-pB-F5L" secondAttribute="top" id="Ogt-CZ-4ae"/>
+                            <constraint firstItem="66I-Ro-bxs" firstAttribute="trailing" secondItem="0Ca-k0-bqy" secondAttribute="trailing" id="Y0c-82-JBl"/>
+                            <constraint firstItem="66I-Ro-bxs" firstAttribute="bottom" secondItem="0Ca-k0-bqy" secondAttribute="bottom" id="wGi-65-ziJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stack" destination="1lY-JH-kU9" id="Svp-kp-A7G"/>
+                        <outlet property="totalButton" destination="Va1-v9-rZQ" id="EVC-LC-me2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17f-Qx-DQr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="52"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
